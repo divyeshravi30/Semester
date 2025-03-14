@@ -1,20 +1,11 @@
-public class Fibonacci
+import java.util.Arrays;
+public class sorting
 {
-public static void main (String []args)
-{
-int n = 10;
-int a=0;
-int b=1;
-System.out.print("The Fibonacci Series of the number till " +n+ " are :");
-for (int i = 1; i <= n; ++i) 
-{
-int c = a+b;
-a=b;
-b=c;
-System.out.print(+a+ " ");
+public static void main(String[] args) 
+{    
+int[] arr = new int[] { 50, 60, 70, 40, 30, 20 };
+System.out.print("Sorted Array :");
+Arrays.sort(arr);
+System.out.println(Arrays.toString(arr));
 }
 }
-}
-
-
-
